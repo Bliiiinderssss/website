@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="assets/cle.ico" />
+
+<!-- Sécurité : politique de contenu (CSP) + referrer -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self'; upgrade-insecure-requests" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>GEST'IMMO — L'investissement immobilier en plus simple</title>
+<meta name="description" content="GEST'IMMO accompagne particuliers et investisseurs : achat, vente, investissement neuf et ancien, viager, gestion locative, assurances et état des lieux. Un conseiller dédié, des tarifs transparents." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/styles.css" />
+
+</head>
+<body class="home">
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="wrap inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-gestimmo.png" alt="GEST'IMMO" />
+    </a>
+    <nav class="nav">
+      <div class="nav-item has-menu">
+        <a href="pages/investir-neuf.html" class="nav-link">Investir</a>
+        <div class="mega">
+          <span class="mega-h">Acheter · Investir</span>
+          <a href="pages/investir-neuf.html">Immobilier neuf<i>›</i></a>
+          <a href="pages/investir-ancien.html">Immobilier ancien<i>›</i></a>
+          <a href="pages/viager.html">Viager occupé &amp; libre<i>›</i></a>
+        </div>
+      </div>
+      <div class="nav-item has-menu">
+        <a href="pages/vendre.html" class="nav-link">Vendre</a>
+        <div class="mega">
+          <span class="mega-h">Vendre · Estimer</span>
+          <a href="pages/vendre.html">Vendre un bien<i>›</i></a>
+          <a href="pages/estimation.html">Estimer mon bien<i>›</i></a>
+        </div>
+      </div>
+      <div class="nav-item has-menu">
+        <a href="pages/gestion-locative.html" class="nav-link">Gestion</a>
+        <div class="mega">
+          <span class="mega-h">Gérer mon bien</span>
+          <a href="pages/gestion-locative.html">Gestion locative complète<i>›</i></a>
+          <a href="pages/gestion-technique.html">Gestion technique<i>›</i></a>
+          <a href="pages/services-a-la-carte.html">Services à la carte<i>›</i></a>
+          <a href="pages/syndic.html">Syndic à la carte<i>›</i></a>
+        </div>
+      </div>
+      <div class="nav-item has-menu">
+        <a href="pages/pro-nourrice.html" class="nav-link">Pro</a>
+        <div class="mega">
+          <span class="mega-h">Pro · B2B</span>
+          <a href="pages/pro-nourrice.html">Nourrice locative<i>›</i></a>
+          <a href="pages/edl-externalise.html">EDL externalisé<i>›</i></a>
+        </div>
+      </div>
+      <a href="pages/assurances.html" class="nav-link">Assurances</a>
+      <a href="pages/etat-des-lieux.html" class="nav-link">État des lieux</a>
+      <a href="pages/a-propos.html" class="nav-link">À propos</a>
+      <a href="pages/rejoindre.html" class="nav-link">Recrutement</a>
+    </nav>
+    <div class="header-cta">
+      <a href="pages/contact.html" class="btn btn-ghost btn-sm">Être rappelé</a>
+      <a href="pages/vendre.html" class="btn btn-primary btn-sm">Estimer mon bien</a>
+    </div>
+    <button class="menu-trigger btn btn-ghost btn-sm">Menu</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="home-hero" aria-label="GEST'IMMO — projets immobiliers">
+  <img class="home-hero__bg" src="assets/hero-interior.jpg" alt="" aria-hidden="true" />
+  <div class="home-hero__scrim" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="ch-eyebrow"><span class="ch-dot"></span>GEST'IMMO · l'investissement en plus simple</p>
+    <h1 class="ch-title"><span class="ch-underline">GEST'IMMO<svg class="ch-uline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M 0,10 Q 75,0 150,10 Q 225,20 300,10" pathLength="1" /></svg></span>, pour réussir<br />tous vos <em>projets immobiliers</em></h1>
+    <div class="sh-rating">
+      <b>4,9/5</b>
+      <span class="stars">★★★★★</span>
+      <span>Excellent · basé sur 1 240 avis</span>
+    </div>
+
+    <div class="sh-search">
+      <div class="sh-tabs" id="shTabs">
+        <button class="active" data-target="pages/contact.html">Acheter</button>
+        <button data-target="pages/contact.html">Louer</button>
+        <button data-target="pages/vendre.html">Vendre / Estimer</button>
+      </div>
+      <div class="sh-card">
+        <div class="sh-chips">
+          <button class="active">Tous</button>
+          <button>Maison</button>
+          <button>Appartement</button>
+          <button>Neuf</button>
+          <button>Immeuble</button>
+          <button>Terrain</button>
+        </div>
+        <form class="sh-form" id="shForm">
+          <div class="input">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <input type="text" placeholder="Ville, code postal..." aria-label="Ville ou code postal" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>
+            Rechercher
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIMULATEURS ============ -->
+<section class="simulators">
+  <div class="wrap">
+    <div class="sim-layout">
+      <div class="sim-intro">
+        <span class="eyebrow">Outils gratuits</span>
+        <h2 class="display" style="margin-top:16px">Estimez votre projet, <em class="italic" style="color:var(--blue)">en quelques clics</em>.</h2>
+        <p class="lead">Des simulateurs gratuits et sans inscription, fondés sur plus de 10 millions de données de marché. Résultat immédiat, ensuite affiné par un conseiller dédié.</p>
+        <ul class="sim-points">
+          <li>100&nbsp;% gratuit, sans inscription</li>
+          <li>Résultat immédiat à l'écran</li>
+          <li>Fondé sur DVF · INSEE · observatoires locaux</li>
+        </ul>
+      </div>
+
+      <div class="sim-steps">
+        <a href="pages/estimation.html" class="sim-step">
+          <span class="sim-node">1</span>
+          <span class="c">
+            <strong>Estimez votre bien</strong>
+            <span class="d">Une fourchette de prix juste en 90 secondes, validée par un expert local.</span>
+            <span class="go">Lancer le simulateur</span>
+          </span>
+        </a>
+        <a href="pages/estimation.html" class="sim-step">
+          <span class="sim-node">2</span>
+          <span class="c">
+            <strong>Estimez votre loyer</strong>
+            <span class="d">Le loyer potentiel de votre bien en quelques clics, données locales à l'appui.</span>
+            <span class="go">Lancer le simulateur</span>
+          </span>
+        </a>
+        <a href="pages/contact.html" class="sim-step">
+          <span class="sim-node">3</span>
+          <span class="c">
+            <strong>Bilan personnalisé</strong>
+            <span class="d">Un échange gratuit avec un conseiller pour cadrer votre projet et son financement.</span>
+            <span class="go">Être rappelé sous 2h</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 UNIVERS (routage clair) ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sect-head">
+      <div>
+        <span class="eyebrow">Par où commencer ?</span>
+        <h2 class="display" style="margin-top:18px">
+          Trois grands besoins,<br />
+          une maison pour <em class="serif italic typewriter" style="color:var(--blue)" data-words='["investir.","vendre.","gérer."]' data-cursor="|" data-speed="80" data-wait="1600" data-delete-speed="40">investir.</em>
+        </h2>
+      </div>
+      <p class="right">
+        Que vous vouliez investir, vendre ou faire gérer votre bien, chaque parcours a sa page dédiée — avec un tarif transparent et un conseiller référent.
+      </p>
+    </div>
+
+    <div class="invest-tri">
+      <article class="invest-card">
+        <div class="photo">
+          <img src="https://www.pavillons-parot.fr/wp-content/uploads/sites/7/2015/10/Mirabelle-vue-avant.jpeg" alt="Maison à investir" loading="lazy" onerror="this.style.display='none'" />
+        </div>
+        <div class="body">
+          <span class="chip" style="align-self:flex-start; margin-bottom:14px">Acheter · Investir</span>
+          <h3>Investir dans l'immobilier</h3>
+          <p class="pitch">Neuf, ancien ou viager — nous calibrons la stratégie selon votre situation patrimoniale et fiscale.</p>
+          <ul>
+            <li>Immobilier neuf · RE2020, Pinel, LMNP</li>
+            <li>Immobilier ancien · méthode en 7 étapes</li>
+            <li>Viager occupé &amp; libre · sans crédit</li>
+          </ul>
+          <div class="foot">
+            <div class="price"><b>3 stratégies</b><br /><span>neuf · ancien · viager</span></div>
+            <a href="pages/investir-neuf.html" class="btn-link">Explorer</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="invest-card">
+        <div class="photo">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Maison à vendre" loading="lazy" onerror="this.style.display='none'" />
+        </div>
+        <div class="body">
+          <span class="chip" style="align-self:flex-start; margin-bottom:14px; background:var(--blue-100); color:var(--blue-700)">Vendre</span>
+          <h3>Vendre votre bien</h3>
+          <p class="pitch">Estimation juste en 90 secondes, confirmée par un expert. Plus de 500 acquéreurs qualifiés activables.</p>
+          <ul>
+            <li>Estimation gratuite &amp; immédiate</li>
+            <li>500+ acquéreurs qualifiés</li>
+            <li>Accompagnement notaire de A à Z</li>
+          </ul>
+          <div class="foot">
+            <div class="price"><b>90 sec</b><br /><span>pour une 1<sup>re</sup> estimation</span></div>
+            <a href="pages/vendre.html" class="btn-link">Estimer</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="invest-card">
+        <div class="photo">
+          <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80" alt="Intérieur de logement géré" loading="lazy" onerror="this.style.display='none'" />
+        </div>
+        <div class="body">
+          <span class="chip" style="align-self:flex-start; margin-bottom:14px; background:var(--blue-200); color:var(--blue-deep)">Gérer</span>
+          <h3>Faire gérer votre bien</h3>
+          <p class="pitch">Gestion locative complète clé en main : bail, locataire, loyers, technique. Vous touchez vos loyers, sans le stress.</p>
+          <ul>
+            <li>Gestion complète dès 6,8% HT</li>
+            <li>Espace client en ligne 24/7</li>
+            <li>Sans frais d'entrée, sans engagement</li>
+          </ul>
+          <div class="foot">
+            <div class="price"><b>6,8% HT</b><br /><span>dès le 3<sup>e</sup> lot confié</span></div>
+            <a href="pages/gestion-locative.html" class="btn-link">Découvrir</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS (schéma) ============ -->
+<section class="tight">
+  <div class="wrap">
+    <div class="timeline-wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Comment ça se passe</span>
+          <h2 class="display" style="margin-top:18px; max-width:18ch;">Du premier appel à la signature, un parcours balisé.</h2>
+        </div>
+        <p>Un interlocuteur unique, des étapes claires, zéro zone grise. Vous savez toujours où en est votre projet.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-step"><div class="n">01</div><h5>Échange</h5><p>Premier rendez-vous gratuit, on cadre votre projet.</p></div>
+        <div class="flow-step"><div class="n">02</div><h5>Recommandation</h5><p>Stratégie chiffrée et devis transparent, par écrit.</p></div>
+        <div class="flow-step"><div class="n">03</div><h5>Mise en œuvre</h5><p>Un conseiller dédié pilote chaque étape pour vous.</p></div>
+        <div class="flow-step"><div class="n">04</div><h5>Suivi</h5><p>Espace client, points réguliers, accompagnement continu.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONFIANCE BAND ============ -->
+<section class="confiance">
+  <img class="section-bg" src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1600&q=80" alt="" loading="lazy" onerror="this.style.display='none'" />
+  <div class="wrap inner">
+    <div style="text-align:center; margin-bottom:56px">
+      <span class="eyebrow">Une croissance fondée sur la confiance</span>
+      <h2 class="display" style="margin-top:18px; max-width:24ch; margin-left:auto; margin-right:auto;">
+        Des chiffres simples.<br />
+        Une promesse claire.
+      </h2>
+    </div>
+    <div class="grid">
+      <div class="stat">
+        <div class="num">98<sup>%</sup></div>
+        <div class="lbl">Taux d'occupation moyen sur les biens gérés en 2025</div>
+      </div>
+      <div class="stat">
+        <div class="num">&lt; 21<sup>j</sup></div>
+        <div class="lbl">Délai moyen de relocation après préavis</div>
+      </div>
+      <div class="stat">
+        <div class="num">500<sup>+</sup></div>
+        <div class="lbl">Acquéreurs qualifiés activables dès la mise en vente</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span class="red">0</span><sup>€</sup></div>
+        <div class="lbl">Frais cachés. Tarification transparente, par écrit, dès le 1er rendez-vous</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOS 12 EXPERTISES (router) ============ -->
+<section class="services" id="metiers">
+  <div class="wrap">
+    <div class="sect-head">
+      <div>
+        <span class="eyebrow">Toutes nos expertises</span>
+        <h2 class="display" style="margin-top:18px">
+          Une <em class="serif italic" style="color:var(--blue)">seule maison</em><br />
+          pour tout votre projet immobilier.
+        </h2>
+      </div>
+      <p class="right">
+        De la première visite à la perception de votre loyer, en passant par l'assurance et le notaire — chaque étape gérée par un expert dédié. C'est notre promesse : <strong style="color:var(--ink)">l'investissement, en plus simple.</strong>
+      </p>
+    </div>
+
+    <!-- Timeline orbitale (animation) — données = nos expertises -->
+    <div class="orbital" id="orbitalTimeline" aria-label="Nos expertises en orbite">
+      <div class="orbital-stage" id="orbitalStage">
+        <div class="orbital-hub" aria-hidden="true">
+          <span class="orbital-ping"></span>
+          <span class="orbital-ping orbital-ping--2"></span>
+          <span class="orbital-core"></span>
+        </div>
+        <div class="orbital-ring" aria-hidden="true"></div>
+        <!-- les nœuds sont injectés par JS -->
+      </div>
+      <p class="orbital-hint">Cliquez sur une expertise pour la déployer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHOTO BAND (preuve / confiance) ============ -->
+<section class="tight">
+  <div class="wrap">
+    <div class="photo-band">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80" alt="Conseiller GEST'IMMO et client se serrant la main" loading="lazy" onerror="this.style.display='none'" />
+      <div class="caption">
+        <span class="chip" style="background:rgba(255,255,255,0.15); color:white; margin-bottom:14px">Un interlocuteur, pas un standard</span>
+        <h3>Un conseiller dédié, du premier appel à la remise des clés.</h3>
+        <p>Pas de renvoi de balle entre services. La personne qui vous reçoit suit votre dossier jusqu'au bout, avec des engagements écrits dès le premier rendez-vous.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÉALISATIONS (carrousel projets) ============ -->
+<section class="realisations" aria-label="Projets déjà réalisés">
+  <div class="wrap">
+    <div class="real-head">
+      <div>
+        <span class="eyebrow">Nos réalisations</span>
+        <h2 class="display">Des projets déjà menés,<br />des clients déjà sereins.</h2>
+      </div>
+      <p class="real-intro">Quelques biens que nous avons gérés, vendus ou rénovés. Un interlocuteur unique, des engagements écrits, des résultats concrets.</p>
+    </div>
+
+    <div class="real-carousel" id="realCarousel" data-autoplay="6000">
+      <div class="real-stage">
+        <figure class="real-slide is-active"
+          data-meta="Gestion locative · Loué en 14 jours"
+          data-name="Appartement T3 rénové — Lyon 6e"
+          data-quote="Rafraîchissement léger, photos professionnelles et sélection rigoureuse du locataire : un dossier fiable signé en deux semaines, loyer optimisé."
+          data-result="+9 % de loyer · 14 jours">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" alt="Appartement rénové lumineux" loading="lazy" onerror="this.style.display='none'" />
+        </figure>
+        <figure class="real-slide is-next"
+          data-meta="Investissement locatif · 4 lots"
+          data-name="Immeuble de rapport — Saint-Étienne"
+          data-quote="Accompagnement de l'achat jusqu'à la mise en location des quatre lots. Travaux ciblés, rentabilité brute portée à 7,8 %."
+          data-result="7,8 % de rendement brut">
+          <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80" alt="Immeuble de rapport" loading="lazy" onerror="this.style.display='none'" />
+        </figure>
+        <figure class="real-slide"
+          data-meta="Vente · Compromis en 21 jours"
+          data-name="Maison familiale — Villeurbanne"
+          data-quote="Estimation au juste prix, home staging et acquéreurs déjà qualifiés en portefeuille : compromis signé au prix en trois semaines."
+          data-result="Vendue au prix · 21 jours">
+          <img src="https://storage.googleapis.com/epc-photos/photo_8e1396ea-87f9-4570-9c12-cb4dacf815f6.jpg" alt="Maison familiale avec jardin" loading="lazy" onerror="this.style.display='none'" />
+        </figure>
+        <figure class="real-slide is-prev"
+          data-meta="Gestion locative meublée"
+          data-name="Studio meublé — Lyon 3e"
+          data-quote="Mise en location meublée clé en main puis gestion complète : aucune vacance sur vingt-quatre mois, aucun impayé."
+          data-result="0 vacance · 24 mois">
+          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80" alt="Studio meublé cosy" loading="lazy" onerror="this.style.display='none'" />
+        </figure>
+      </div>
+
+      <div class="real-content">
+        <div class="real-panel">
+          <div class="real-meta">Gestion locative · Loué en 14 jours</div>
+          <h3 class="real-name">Appartement T3 rénové — Lyon 6e</h3>
+          <p class="real-quote">Rafraîchissement léger, photos professionnelles et sélection rigoureuse du locataire : un dossier fiable signé en deux semaines, loyer optimisé.</p>
+          <span class="real-result">+9 % de loyer · 14 jours</span>
+        </div>
+        <div class="real-controls">
+          <div class="real-dots"></div>
+          <div class="real-arrows">
+            <button class="real-arrow" type="button" data-dir="prev" aria-label="Projet précédent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="real-arrow" type="button" data-dir="next" aria-label="Projet suivant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="sect-head">
+      <div>
+        <span class="eyebrow">Ils nous font confiance</span>
+        <h2 class="display" style="margin-top:18px">
+          Ce qu'en disent nos clients.
+        </h2>
+      </div>
+      <p class="right">
+        Plus de 1 200 propriétaires et investisseurs nous ont confié leurs biens. Voici ce qu'ils en disent — sans filtre, certifiés Avis Vérifiés.
+      </p>
+    </div>
+  </div>
+
+  <!-- Mur 3D d'avis : colonnes verticales défilantes -->
+  <div class="testi-wall" aria-label="Avis de nos clients">
+    <div class="testi-wall-3d" id="testiWall"></div>
+    <span class="testi-fade t" aria-hidden="true"></span>
+    <span class="testi-fade b" aria-hidden="true"></span>
+    <span class="testi-fade l" aria-hidden="true"></span>
+    <span class="testi-fade r" aria-hidden="true"></span>
+  </div>
+</section>
+
+<script>
+(function(){
+  var wall=document.getElementById('testiWall'); if(!wall) return;
+  var d=[
+    {n:'Claire M.',u:'@claire.m',c:'🇫🇷 Lyon',b:'Mon T3 reloué en 11 jours, sans stress.',img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80'},
+    {n:'Jean-Pierre L.',u:'@jp.l',c:'🇫🇷 Bordeaux',b:'Gestion de mes 4 lots : un gain de temps énorme.',img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80'},
+    {n:'Sophie R.',u:'@sophie.r',c:'🇫🇷 Paris',b:'Achat en viager limpide, notaire au top.',img:'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80'},
+    {n:'Mehdi B.',u:'@mehdi.b',c:'🇫🇷 Bordeaux',b:'Premier investissement réussi, tout était clair.',img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80'},
+    {n:'Nathalie D.',u:'@nathalie.d',c:'🇫🇷 Nantes',b:'Vendu en 5 semaines au prix annoncé.',img:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80'},
+    {n:'Karim T.',u:'@karim.t',c:'🇫🇷 Marseille',b:'Syndic à la carte : on a économisé, enfin sereins.',img:'https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=120&q=80'},
+    {n:'Élodie F.',u:'@elodie.f',c:'🇫🇷 Lille',b:'Estimation juste et conseils vraiment honnêtes.',img:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'},
+    {n:'Thomas G.',u:'@thomas.g',c:'🇫🇷 Toulouse',b:'Un seul interlocuteur, zéro paperasse pour moi.',img:'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80'},
+    {n:'Camille V.',u:'@camille.v',c:'🇫🇷 Strasbourg',b:'Accompagnement au top pour mon premier achat.',img:'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=120&q=80'},
+    {n:'Hugo M.',u:'@hugo.m',c:'🇫🇷 Rennes',b:'Loyers versés à l\'heure, comptes clairs chaque mois.',img:'https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=120&q=80'},
+    {n:'Inès B.',u:'@ines.b',c:'🇫🇷 Montpellier',b:'Vendu plus vite que prévu, équipe très réactive.',img:'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=120&q=80'},
+    {n:'Antoine P.',u:'@antoine.p',c:'🇫🇷 Lille',b:'Des conseils fiscaux qui m\'ont vraiment fait gagner.',img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80'},
+    {n:'Léa C.',u:'@lea.c',c:'🇫🇷 Nice',b:'État des lieux nickel, restitution sans aucun litige.',img:'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&q=80'},
+    {n:'Yanis K.',u:'@yanis.k',c:'🇫🇷 Lyon',b:'Du neuf clé en main, zéro mauvaise surprise.',img:'https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=120&q=80'},
+    {n:'Manon S.',u:'@manon.s',c:'🇫🇷 Tours',b:'Gestion sereine de mon studio étudiant.',img:'https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=120&q=80'},
+    {n:'Olivier D.',u:'@olivier.d',c:'🇫🇷 Annecy',b:'Une réponse en 2h à chaque question. Impeccable.',img:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80'}
+  ];
+  function card(t){
+    return '<article class="testi-mini">'
+      + '<div class="tm-head">'
+      +   '<span class="tm-avatar">'+t.n.charAt(0)+'<img src="'+t.img+'" alt="" loading="lazy" onerror="this.remove()"></span>'
+      +   '<span class="tm-id"><span class="tm-name">'+t.n+' <span class="tm-flag">'+t.c+'</span></span><span class="tm-user">'+t.u+'</span></span>'
+      + '</div>'
+      + '<p class="tm-body">'+t.b+'</p>'
+      + '</article>';
+  }
+  function windowItems(start,len){ var o=[]; for(var k=0;k<len;k++){ o.push(d[(start+k)%d.length]); } return o; }
+  var per=8;                                           // 8 avis distincts par colonne
+  for(var i=0;i<4;i++){
+    var rot=windowItems((i*4)%d.length, per);          // fenêtre décalée par colonne
+    var html=rot.map(card).join('');
+    var col=document.createElement('div'); col.className='testi-col';
+    var track=document.createElement('div'); track.className='testi-coltrack'+(i%2?' rev':'');
+    track.style.animationDuration=(30+i*5)+'s';        // vitesses désynchronisées
+    track.innerHTML=html+html;                         // doublé = boucle sans couture
+    col.appendChild(track); wall.appendChild(col);
+  }
+})();
+</script>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band">
+  <img class="section-bg" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80" alt="" loading="lazy" onerror="this.style.display='none'" />
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="eyebrow" style="color:rgba(255,255,255,0.9)">Démarrer maintenant</span>
+        <h2 class="display" style="color:white; margin-top:18px">
+          Parlons de votre projet.<br /><em class="italic" style="color:rgba(255,255,255,0.85)">Sans engagement.</em>
+        </h2>
+        <p>Un conseiller dédié vous rappelle sous 2h ouvrées. Bilan gratuit, devis transparent, recommandations chiffrées.</p>
+      </div>
+      <div class="actions">
+        <a href="pages/contact.html" class="btn btn-lg" style="background:white; color:var(--blue)">Être rappelé sous 2h</a>
+        <a href="pages/vendre.html" class="btn btn-lg" style="background:rgba(255,255,255,0.1); color:white; border:1px solid rgba(255,255,255,0.3)">Estimer mon bien</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand-block">
+        <div class="logo"><img src="assets/logo-gestimmo.png" alt="GEST'IMMO" /></div>
+        <p>L'investissement immobilier en plus simple. 12 expertises sous un même toit pour protéger et valoriser votre patrimoine.</p>
+        <div style="margin-top:20px; display:flex; gap:12px;">
+          <span class="chip">Carte T &amp; G</span>
+          <span class="chip">FNAIM</span>
+        </div>
+      </div>
+      <div>
+        <h6>Investir</h6>
+        <ul>
+          <li><a href="pages/investir-neuf.html">Immobilier neuf</a></li>
+          <li><a href="pages/investir-ancien.html">Immobilier ancien</a></li>
+          <li><a href="pages/viager.html">Viager</a></li>
+          <li><a href="pages/vendre.html">Vendre un bien</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Gestion</h6>
+        <ul>
+          <li><a href="pages/gestion-locative.html">Gestion locative</a></li>
+          <li><a href="pages/gestion-technique.html">Gestion technique</a></li>
+          <li><a href="pages/services-a-la-carte.html">Services à la carte</a></li>
+          <li><a href="pages/syndic.html">Syndic à la carte</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sérénité</h6>
+        <ul>
+          <li><a href="pages/assurances.html">Assurances</a></li>
+          <li><a href="pages/etat-des-lieux.html">État des lieux</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/a-propos.html">FAQ &amp; à propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Pro · B2B</h6>
+        <ul>
+          <li><a href="pages/edl-externalise.html">EDL externalisé</a></li>
+          <li><a href="pages/pro-nourrice.html">Nourrice locative</a></li>
+          <li><a href="pages/a-propos.html">À propos</a></li>
+          <li><a href="pages/rejoindre.html">Recrutement</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© 2026 GEST'IMMO · Tous droits réservés</div>
+      <div class="legal">
+        <a href="pages/mentions-legales.html">Mentions légales</a>
+        <a href="pages/mentions-legales.html#donnees-personnelles">RGPD</a>
+        <a href="pages/mentions-legales.html#cgu">CGU</a>
+        <a href="pages/mentions-legales.html#cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Onglets + chips du hero de recherche (active au clic)
+  ['#shTabs', '.sh-chips', '.type-toggle'].forEach(sel => {
+    document.querySelectorAll(sel).forEach(group => {
+      group.addEventListener('click', e => {
+        const btn = e.target.closest('button');
+        if(btn && group.contains(btn)){
+          group.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+      });
+    });
+  });
+
+  // Recherche : redirige vers la page correspondant à l'onglet actif
+  const shForm = document.getElementById('shForm');
+  if(shForm){
+    shForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const active = document.querySelector('#shTabs button.active');
+      window.location.href = active ? active.dataset.target : 'pages/contact.html';
+    });
+  }
+
+  // ===== Timeline orbitale des expertises (animation) =====
+  (function(){
+    const stage = document.getElementById('orbitalStage');
+    const wrap  = document.getElementById('orbitalTimeline');
+    if(!stage || !wrap) return;
+
+    // Icônes (style lucide, inline SVG, héritent de currentColor)
+    const ico = {
+      invest: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M9 13h.01"/><path d="M9 17h.01"/><path d="M15 9h.01"/><path d="M15 13h.01"/><path d="M15 17h.01"/></svg>',
+      sell:   '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.6a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82Z"/><circle cx="7" cy="7" r="1.5"/></svg>',
+      manage: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="3.5"/><path d="m10 13 8.5-8.5"/><path d="m15.5 7 2.5 2.5"/><path d="m18.5 4 2.5 2.5"/></svg>',
+      shield: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>',
+      pro:    '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>'
+    };
+
+    // ===== Données = expertises déjà présentes sur le site =====
+    const data = [
+      { id:1, num:'01', title:'Investir',   tag:'Acheter · Investir', desc:"Bâtir un patrimoine — neuf, ancien ou viager.", icon:ico.invest, relatedIds:[2,5], links:[
+        { t:'Immobilier neuf',        s:'RE2020, frais notaire 2-3 %, Pinel · LMNP · LMP', href:'pages/investir-neuf.html' },
+        { t:'Immobilier ancien',      s:'Méthode en 7 étapes, biens sélectionnés',         href:'pages/investir-ancien.html' },
+        { t:'Viager occupé & libre',  s:'Décote 30-50 %, sans recours au crédit',          href:'pages/viager.html' } ] },
+      { id:2, num:'02', title:'Vendre',     tag:'Vendre · Estimer', desc:"Du juste prix à la signature notariée.", icon:ico.sell, relatedIds:[1,3], links:[
+        { t:'Vendre un bien',     s:'Mise en marché premium, 500 acquéreurs qualifiés', href:'pages/vendre.html' },
+        { t:'Estimation en ligne',s:'Une fourchette de prix juste en 90 secondes',     href:'pages/estimation.html' } ] },
+      { id:3, num:'03', title:'Gérer',      tag:'Gestion', desc:"Vos loyers, votre bien, votre copropriété.", icon:ico.manage, relatedIds:[2,4], links:[
+        { t:'Gestion locative complète', s:'7,5 % HT · clé en main, espace client 24/7', href:'pages/gestion-locative.html' },
+        { t:'Gestion technique',         s:'5 % HT · urgences 7j/7',                     href:'pages/gestion-technique.html' },
+        { t:'Services à la carte',       s:'Bail, GLI, fiscalité, IRL…',                 href:'pages/services-a-la-carte.html' },
+        { t:'Syndic à la carte',         s:'Petites copros & syndics bénévoles',         href:'pages/syndic.html' } ] },
+      { id:4, num:'04', title:'Sérénité',   tag:'Protection', desc:"Protéger et sécuriser votre investissement.", icon:ico.shield, relatedIds:[3,5], links:[
+        { t:'Assurances négociées', s:'GLI 96 000 €, PNO, MRI — AXA, Allianz, Generali', href:'pages/assurances.html' },
+        { t:'État des lieux',       s:'Loi ALUR, photos HD, rapport sous 24h',           href:'pages/etat-des-lieux.html' } ] },
+      { id:5, num:'05', title:'Pro · B2B',  tag:'Pro · B2B', desc:"Pour les agences et les mandataires.", icon:ico.pro, relatedIds:[4,1], links:[
+        { t:'EDL externalisé',  s:'Sous-traitez vos états des lieux, qualité ALUR', href:'pages/edl-externalise.html' },
+        { t:'Nourrice locative',s:'Portage carte G, mandats, séquestre',            href:'pages/pro-nourrice.html' } ] }
+    ];
+
+    // ===== État =====
+    let angle = 0;          // rotation courante (deg)
+    let autoRotate = true;  // rotation auto
+    let activeId = null;    // nœud déployé
+    const nodes = {};       // id -> { el, label, card }
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const radius = () => (stage.clientWidth <= 420 ? 130 : 185);
+
+    // ===== Construction des nœuds =====
+    data.forEach((item, i) => {
+      const node = document.createElement('div');
+      node.className = 'orb-node';
+      node.style.zIndex = 10;
+      node.setAttribute('role','button');
+      node.setAttribute('tabindex','0');
+      node.setAttribute('aria-label', item.title);
+
+      const glow  = document.createElement('span'); glow.className = 'orb-glow';
+      const dot   = document.createElement('span'); dot.className = 'orb-dot'; dot.innerHTML = item.icon;
+      const label = document.createElement('span'); label.className = 'orb-label'; label.textContent = item.title;
+
+      // Carte déployée
+      const card = document.createElement('div');
+      card.className = 'orb-card';
+      card.innerHTML =
+        '<span class="orb-card-stem"></span>'
+        + '<div class="orb-card-head">'
+          + '<span class="orb-chip">'+ item.tag +'</span>'
+          + '<span class="orb-card-num">'+ item.num +'</span>'
+        + '</div>'
+        + '<h4 class="orb-card-title">'+ item.title +'</h4>'
+        + '<p class="orb-card-desc">'+ item.desc +'</p>'
+        + '<div class="orb-card-links">'
+          + item.links.map(l => '<a class="orb-card-link" href="'+ l.href +'"><strong>'+ l.t +'</strong><span>'+ l.s +'</span><i>›</i></a>').join('')
+        + '</div>';
+
+      node.append(glow, dot, label, card);
+      node.addEventListener('click', (e)=>{ e.stopPropagation(); toggle(item.id); });
+      node.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(item.id); } });
+      // clic à l'intérieur de la carte ne referme pas
+      card.addEventListener('click', e => e.stopPropagation());
+
+      stage.appendChild(node);
+      nodes[item.id] = { el:node, label, card, dot, glow, index:i, item };
+    });
+
+    // ===== Positionnement selon l'angle =====
+    function layout(){
+      const total = data.length;
+      const r = radius();
+      data.forEach((item, i) => {
+        const a = ((i/total)*360 + angle) % 360;
+        const rad = a * Math.PI/180;
+        const x = r * Math.cos(rad);
+        const y = r * Math.sin(rad);
+        const z = Math.round(100 + 50*Math.cos(rad));
+        const n = nodes[item.id];
+        const expanded = activeId === item.id;
+        n.el.style.transform = 'translate(-50%, -50%) translate('+x.toFixed(1)+'px, '+y.toFixed(1)+'px)';
+        n.el.style.zIndex = expanded ? 300 : z;
+        n.el.style.opacity = 1;
+      });
+    }
+
+    // ===== Boucle d'animation (setInterval : continue même en arrière-plan) =====
+    let timer = null;
+    function startLoop(){
+      if(timer || !autoRotate) return;
+      timer = setInterval(function(){
+        angle = (angle + 0.12) % 360;
+        layout();
+      }, 50);
+    }
+    function stopLoop(){
+      if(timer){ clearInterval(timer); timer = null; }
+    }
+    layout();      // position initiale
+    startLoop();   // démarre la rotation
+
+    // ===== Rotation animée pour amener un nœud tout en haut, en douceur =====
+    let centerRAF = null;
+    function stopCenterTween(){
+      if(centerRAF){ cancelAnimationFrame(centerRAF); centerRAF = null; }
+      Object.values(nodes).forEach(n => { n.el.style.transition = ''; });
+    }
+    function animateCenter(id, onDone){
+      stopCenterTween();
+      const idx  = data.findIndex(d => d.id === id);
+      const base = (idx/data.length) * 360;
+      const start = angle;
+      // delta le plus court pour amener (base + angle) à 270° (le haut)
+      let delta = ((270 - base - start + 540) % 360) - 180;
+      const dur = 1600;                      // durée de la montée (plus lente = plus fluide)
+      const t0  = performance.now();
+      // on suit l'angle image par image le long de l'orbite (pas de transition CSS parasite)
+      Object.values(nodes).forEach(n => { n.el.style.transition = 'none'; });
+      function step(now){
+        const t = Math.min(1, (now - t0) / dur);
+        const e = t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2; // easeInOutCubic
+        angle = (start + delta * e + 360) % 360;
+        layout();
+        if(t < 1){
+          centerRAF = requestAnimationFrame(step);
+        } else {
+          centerRAF = null;
+          Object.values(nodes).forEach(n => { n.el.style.transition = ''; });
+          if(typeof onDone === 'function') onDone();
+        }
+      }
+      centerRAF = requestAnimationFrame(step);
+    }
+
+    // ===== Déplier / replier =====
+    function toggle(id){
+      if(activeId === id){ reset(); return; }
+      activeId = id;
+      autoRotate = false;
+      stopLoop();
+      // feedback immédiat (couleur + agrandissement) ; la fiche attend l'arrivée en haut
+      Object.values(nodes).forEach(n => {
+        n.el.classList.toggle('is-selected', n.item.id === id);
+        n.el.classList.remove('is-active');
+      });
+      animateCenter(id, function(){
+        if(activeId === id) nodes[id].el.classList.add('is-active');
+      });
+    }
+
+    function reset(){
+      activeId = null;
+      autoRotate = true;
+      stopCenterTween();
+      Object.values(nodes).forEach(n => n.el.classList.remove('is-active','is-selected','is-related','is-pulsing'));
+      layout();
+      startLoop();
+    }
+
+    // clic sur le fond = repli
+    wrap.addEventListener('click', e => { if(e.target === wrap || e.target === stage) reset(); });
+
+    window.addEventListener('resize', layout);
+  })();
+</script>
+
+<script>
+  // Trait ondulé sous « GEST'IMMO » : se dessine au chargement du hero.
+  (function(){
+    var draw = function(){ var u = document.querySelector('.ch-underline'); if (u) u.classList.add('draw'); };
+    if (document.readyState !== 'loading') requestAnimationFrame(draw);
+    else document.addEventListener('DOMContentLoaded', draw);
+  })();
+</script>
+
+<script>
+  // ===== Typewriter (effet machine à écrire — vanilla) =====
+  (function(){
+    function run(el){
+      var words;
+      try { words = JSON.parse(el.getAttribute('data-words') || '[]'); } catch(e){ words = []; }
+      if(!words.length) words = [el.textContent];
+      var speed       = +el.getAttribute('data-speed')        || 70;
+      var deleteSpeed = +el.getAttribute('data-delete-speed') || 40;
+      var waitTime    = +el.getAttribute('data-wait')         || 1800;
+      var initialDelay= +el.getAttribute('data-initial-delay')|| 0;
+      var loop        = el.getAttribute('data-loop') !== 'false';
+
+      var textNode = document.createElement('span');
+      var cursor   = document.createElement('span');
+      cursor.className = 'tw-cursor';
+      cursor.textContent = el.getAttribute('data-cursor') || '|';
+      el.textContent = '';
+      el.appendChild(textNode);
+      el.appendChild(cursor);
+
+      // Réserve la largeur (mot le plus long + curseur) → la ligne ne bouge jamais, le curseur reste collé au texte
+      var maxW = 0;
+      words.forEach(function(w){ textNode.textContent = w; var ww = textNode.getBoundingClientRect().width; if(ww > maxW) maxW = ww; });
+      textNode.textContent = '';
+      var curW = cursor.getBoundingClientRect().width || 8;
+      if(maxW > 0) el.style.minWidth = Math.ceil(maxW + curW + 2) + 'px';
+
+      var wi = 0, ci = 0, deleting = false;
+      function tick(){
+        var current = words[wi];
+        if(!deleting){
+          ci++; textNode.textContent = current.slice(0, ci);
+          if(ci < current.length){ setTimeout(tick, speed); }
+          else if(words.length > 1 && (loop || wi < words.length - 1)){ setTimeout(function(){ deleting = true; tick(); }, waitTime); }
+        } else {
+          ci--; textNode.textContent = current.slice(0, ci);
+          if(ci > 0){ setTimeout(tick, deleteSpeed); }
+          else { deleting = false; wi = (wi + 1) % words.length; setTimeout(tick, speed); }
+        }
+      }
+      setTimeout(tick, initialDelay);
+    }
+    function init(){ document.querySelectorAll('.typewriter').forEach(function(el){ if(el.dataset.twInit) return; el.dataset.twInit='1'; run(el); }); }
+    if(document.readyState !== 'loading') init();
+    else document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>
+
+<script>(function(){document.querySelectorAll(".two-col").forEach(function(b,i){if(i%2===1)b.classList.add("reverse");});document.querySelectorAll(".sect-head").forEach(function(b,i){var m=i%3;if(m===1)b.classList.add("reverse");else if(m===2)b.classList.add("center");});})();</script>
+<script defer src="assets/realisations.js"></script>
+<script defer src="assets/ui.js"></script>
+</body>
+</html>

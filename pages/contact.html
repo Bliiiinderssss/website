@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="../assets/cle.ico" />
+
+<!-- Sécurité : politique de contenu (CSP) + referrer -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self'; upgrade-insecure-requests" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>Contact · GEST'IMMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+
+<header class="header"><div class="wrap inner">
+  <a class="brand" href="../index.html"><img src="../assets/logo-gestimmo.png" alt="GEST'IMMO" /></a>
+  <nav class="nav">
+    <div class="nav-item has-menu">
+      <a href="investir-neuf.html" class="nav-link">Investir</a>
+      <div class="mega">
+        <span class="mega-h">Acheter · Investir</span>
+        <a href="investir-neuf.html">Immobilier neuf<i>›</i></a>
+        <a href="investir-ancien.html">Immobilier ancien<i>›</i></a>
+        <a href="viager.html">Viager occupé &amp; libre<i>›</i></a>
+      </div>
+    </div>
+    <div class="nav-item has-menu">
+      <a href="vendre.html" class="nav-link">Vendre</a>
+      <div class="mega">
+        <span class="mega-h">Vendre · Estimer</span>
+        <a href="vendre.html">Vendre un bien<i>›</i></a>
+        <a href="estimation.html">Estimer mon bien<i>›</i></a>
+      </div>
+    </div>
+    <div class="nav-item has-menu">
+      <a href="gestion-locative.html" class="nav-link">Gestion</a>
+      <div class="mega">
+        <span class="mega-h">Gérer mon bien</span>
+        <a href="gestion-locative.html">Gestion locative complète<i>›</i></a>
+        <a href="gestion-technique.html">Gestion technique<i>›</i></a>
+        <a href="services-a-la-carte.html">Services à la carte<i>›</i></a>
+        <a href="syndic.html">Syndic à la carte<i>›</i></a>
+      </div>
+    </div>
+    <div class="nav-item has-menu">
+      <a href="pro-nourrice.html" class="nav-link">Pro</a>
+      <div class="mega">
+        <span class="mega-h">Pro · B2B</span>
+        <a href="pro-nourrice.html">Nourrice locative<i>›</i></a>
+        <a href="edl-externalise.html">EDL externalisé<i>›</i></a>
+      </div>
+    </div>
+    <a href="assurances.html" class="nav-link">Assurances</a>
+    <a href="etat-des-lieux.html" class="nav-link">État des lieux</a>
+    <a href="a-propos.html" class="nav-link">À propos</a>
+    <a href="rejoindre.html" class="nav-link">Recrutement</a>
+  </nav>
+  <div class="header-cta">
+    <a href="contact.html" class="btn btn-ghost btn-sm" style="color:var(--blue);border-color:var(--blue)">Contact</a>
+    <a href="vendre.html" class="btn btn-primary btn-sm">Estimer mon bien</a>
+  </div>
+</div></header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Accueil</a> / <span>Contact</span></div>
+    <div class="grid">
+      <div>
+        <span class="eyebrow">Parlons de votre projet</span>
+        <h1 style="margin-top:18px">Un conseiller<br /><em>dédié</em> sous 2h.</h1>
+        <p class="lead">Premier rendez-vous gratuit, sans engagement. Décrivez-nous votre projet — nous vous mettons en relation avec le bon expert.</p>
+      </div>
+      <div class="right-meta">
+        <div class="row"><span class="k">Téléphone</span><span class="v" style="font-size:18px">06 49 50 52 50</span></div>
+        <div class="row"><span class="k">Email</span><span class="v" style="font-size:14px; color:var(--blue)">contact@gestimmo-presta.fr</span></div>
+        <div class="row"><span class="k">Rappel</span><span class="v" style="font-size:18px">&lt; 2h ouvrées</span></div>
+        <div class="row"><span class="k">Horaires</span><span class="v" style="font-size:14px">Lun–Sam · 9h–19h</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('sent').style.display='flex'; this.style.display='none';">
+        <span class="eyebrow">Formulaire</span>
+        <h3 class="display" style="margin:14px 0 28px; font-size:28px">Décrivez votre projet.</h3>
+
+        <div class="field"><label>Mon projet concerne</label>
+          <div class="type-toggle">
+            <button type="button" class="active">Investir</button>
+            <button type="button">Vendre</button>
+            <button type="button">Gestion</button>
+            <button type="button">Pro · B2B</button>
+            <button type="button">Autre</button>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field"><label>Prénom</label><input type="text" placeholder="Camille" /></div>
+          <div class="field"><label>Nom</label><input type="text" placeholder="Martin" /></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Email</label><input type="email" placeholder="camille@email.com" required /></div>
+          <div class="field"><label>Téléphone</label><input type="tel" placeholder="06 12 34 56 78" /></div>
+        </div>
+
+        <div class="field"><label>Ville du projet</label><input type="text" placeholder="Lyon, Paris, Bordeaux..." /></div>
+
+        <div class="field"><label>Votre message (facultatif)</label>
+          <textarea rows="4" style="padding:14px 16px; border:1px solid var(--line); border-radius:var(--r-md); font-family:inherit; font-size:14.5px; color:var(--ink); background:var(--bone); resize:vertical;" placeholder="Quelques mots sur votre situation et vos objectifs..."></textarea>
+        </div>
+
+        <div class="field" style="flex-direction:row; align-items:flex-start; gap:10px; font-size:12.5px; color:var(--muted); margin-top:8px">
+          <input type="checkbox" id="rgpd" required style="margin-top:4px" />
+          <label for="rgpd" style="flex:1">J'accepte que mes données soient traitées par GEST'IMMO pour me recontacter. <a href="mentions-legales.html#donnees-personnelles" style="color:var(--blue)">Politique de confidentialité</a>.</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="margin-top:16px; width:100%">Être rappelé sous 2h</button>
+      </form>
+
+      <div id="sent" style="display:none; align-items:center; justify-content:center; flex-direction:column; gap:16px; background:var(--bone); border:1px solid var(--line); border-radius:var(--r-xl); padding:60px 40px; text-align:center">
+        <div style="width:60px; height:60px; border-radius:50%; background:var(--blue); color:white; display:grid; place-items:center; font-size:28px">✓</div>
+        <h3 class="display" style="font-size:28px">Message reçu.</h3>
+        <p style="color:var(--muted); max-width:38ch">Un conseiller vous rappelle sous 2h ouvrées. En cas d'urgence, joignez-nous au 06 49 50 52 50.</p>
+      </div>
+
+      <div class="contact-info">
+        <div class="block">
+          <h5>Par téléphone</h5>
+          <p class="big">06 49 50 52 50</p>
+          <p style="margin-top:6px">Lun–Sam · 9h–19h · rappel sous 2h ouvrées</p>
+        </div>
+        <div class="block">
+          <h5>Par email</h5>
+          <p style="color:var(--blue); font-weight:600">contact@gestimmo-presta.fr</p>
+          <p style="margin-top:6px">Réponse le jour même en période ouvrée</p>
+        </div>
+        <div class="block">
+          <h5>Couverture</h5>
+          <p>Paris, Lyon, Bordeaux, Marseille, Nantes, Lille — et partout en France via notre réseau de conseillers.</p>
+        </div>
+        <div class="block">
+          <h5>Pro · B2B</h5>
+          <p style="font-size:14px">Nourrice locative, EDL externalisé</p>
+          <p style="margin-top:6px; color:var(--blue); font-weight:600">pro@gestimmo-presta.fr</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ rapide -->
+<section style="background:var(--bone)" class="tight">
+  <div class="wrap-narrow">
+    <div style="text-align:center; margin-bottom:40px">
+      <span class="eyebrow neutral" style="justify-content:center; display:inline-flex">Avant de nous contacter</span>
+      <h2 class="display" style="margin-top:16px; font-size:36px">Quelques réponses fréquentes.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary>Combien de temps avant d'être rappelé ?<span class="plus"></span></summary><div class="answer">Moins de 2h pendant les heures ouvrées (lun-sam, 9h-19h). En dehors, un email confirmant votre demande arrive immédiatement, le rappel se fait au début de la prochaine plage horaire.</div></details>
+      <details class="faq-item"><summary>Le premier rendez-vous est-il payant ?<span class="plus"></span></summary><div class="answer">Non. Premier rendez-vous découverte gratuit, en visio ou en agence. Aucun engagement, aucun document à signer.</div></details>
+      <details class="faq-item"><summary>Puis-je passer en agence sans rendez-vous ?<span class="plus"></span></summary><div class="answer">C'est possible, mais nous vous conseillons fortement de prendre rendez-vous pour qu'un expert du métier qui vous concerne (investissement, vente, gestion, etc.) soit disponible.</div></details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="wrap"><div class="bottom" style="border:none;padding-top:0">© 2026 GEST'IMMO · L'investissement en plus simple · <a href="mentions-legales.html">Mentions légales</a> · <a href="../index.html">Retour à l'accueil</a></div></div></footer>
+
+<script>
+  document.querySelectorAll('.type-toggle').forEach(g => g.addEventListener('click', e => { if(e.target.tagName === 'BUTTON'){ g.querySelectorAll('button').forEach(b => b.classList.remove('active')); e.target.classList.add('active'); }}));
+</script>
+
+<script>(function(){document.querySelectorAll(".two-col").forEach(function(b,i){if(i%2===1)b.classList.add("reverse");});document.querySelectorAll(".sect-head").forEach(function(b,i){var m=i%3;if(m===1)b.classList.add("reverse");else if(m===2)b.classList.add("center");});})();</script>
+<script>(function(){var f=(location.pathname.split("/").pop()||"").toLowerCase();document.querySelectorAll(".nav .nav-item.has-menu").forEach(function(it){if([].some.call(it.querySelectorAll("a"),function(a){return (a.getAttribute("href")||"").toLowerCase()===f;}))it.querySelector(".nav-link").classList.add("nav-active");});document.querySelectorAll(".nav > .nav-link").forEach(function(a){if((a.getAttribute("href")||"").toLowerCase()===f)a.classList.add("nav-active");});})();</script>
+<script defer src="../assets/ui.js"></script>
+</body>
+</html>
