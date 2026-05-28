@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/styles.css" />
+<link rel="stylesheet" href="assets/styles.css?v=4" />
 
 </head>
 <body class="home">
@@ -746,7 +746,13 @@
         n.el.classList.remove('is-active');
       });
       animateCenter(id, function(){
-        if(activeId === id) nodes[id].el.classList.add('is-active');
+        if(activeId !== id) return;
+        nodes[id].el.classList.add('is-active');
+        // Sur mobile : on amène le nœud + sa fiche dans le champ de vision (pas de coupe)
+        if(window.matchMedia('(max-width: 760px)').matches){
+          var rect = nodes[id].el.getBoundingClientRect();
+          window.scrollTo({ top: window.pageYOffset + rect.top - 96, behavior: 'smooth' });
+        }
       });
     }
 
@@ -825,7 +831,7 @@
 </script>
 
 <script>(function(){document.querySelectorAll(".two-col").forEach(function(b,i){if(i%2===1)b.classList.add("reverse");});document.querySelectorAll(".sect-head").forEach(function(b,i){var m=i%3;if(m===1)b.classList.add("reverse");else if(m===2)b.classList.add("center");});})();</script>
-<script defer src="assets/realisations.js"></script>
-<script defer src="assets/ui.js"></script>
+<script defer src="assets/realisations.js?v=2"></script>
+<script defer src="assets/ui.js?v=2"></script>
 </body>
 </html>
